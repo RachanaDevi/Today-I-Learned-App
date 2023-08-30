@@ -1,5 +1,9 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* reseting all values */
 
 body {
   background-color: #292524;
@@ -8,9 +12,15 @@ body {
   /* tailwind colors https://tailwindcss.com/docs/customizing-colors */
 }
 
+.header {
+  margin-bottom: 40px;
+}
+
 .fact-form {
   background-color: #44403c;
+  margin-bottom: 40px;
 }
+
 h1 {
   font-size: 42px;
   text-transform: uppercase;
