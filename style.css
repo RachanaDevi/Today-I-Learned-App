@@ -16,6 +16,17 @@ body {
 
 .header {
   margin-bottom: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .fact-form {
@@ -31,6 +42,9 @@ h1 {
   text-align: center;
   font-family: "Coiny", sans-serif;
   color: white;
+  /* background-color: purple; */
+  line-height: 1; /* to put the font below it as margin was not working */
+  margin-top: 5px;
 }
 
 .fact {
