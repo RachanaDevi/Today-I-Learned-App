@@ -14,6 +14,13 @@ body {
   /* tailwind colors https://tailwindcss.com/docs/customizing-colors */
 }
 
+.main{
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;  
+}
+
 .header {
   margin-bottom: 40px;
   /* background-color: red; */
@@ -22,18 +29,21 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  /* background-color: blue; */
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .fact-form {
   background-color: #44403c;
   margin-bottom: 40px;
   padding: 16px 40px;
   /* order is very important, if you put padding-left before padding, padding would overwrite it*/
+}
+
+/* ELEMENTS */
+
+
+.logo {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 h1 {
