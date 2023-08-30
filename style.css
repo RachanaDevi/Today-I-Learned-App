@@ -75,3 +75,19 @@ h1 {
 ul {
   list-style: none;
 }
+
+/* .test {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 100px 200px; 
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 300px;
+  /* row height */
+  /* gap: 30px; */
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.child {
+  background-color: red;
+} */
