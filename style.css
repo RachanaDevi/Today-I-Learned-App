@@ -7,8 +7,10 @@
 
 body {
   background-color: #292524;
+  /* border: 2px solid red;  Border format*/
   color: #fafaf9;
   font-family: "Sono", sans-serif;
+  padding: 20px; /* we want space with the internal elements of body */
   /* tailwind colors https://tailwindcss.com/docs/customizing-colors */
 }
 
@@ -20,6 +22,7 @@ body {
   background-color: #44403c;
   margin-bottom: 40px;
   padding: 16px 40px;
+  /* order is very important, if you put padding-left before padding, padding would overwrite it*/
 }
 
 h1 {
