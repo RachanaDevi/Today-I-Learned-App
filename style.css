@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* reseting all values */
 
 body {
@@ -10,7 +11,8 @@ body {
   /* border: 2px solid red;  Border format*/
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px; /* we want space with the internal elements of body */
+  padding: 48px 64px;
+  /* we want space with the internal elements of body */
   /* tailwind colors https://tailwindcss.com/docs/customizing-colors */
 }
 
@@ -24,7 +26,7 @@ body {
 
 .container {
   /* width: 1400px; not using width because its not responsive */
-  max-width: 1000px;
+  max-width: 1500px;
   /* background-color: orange; */
   margin: 0 auto;
   /*  same as above */
@@ -56,10 +58,11 @@ body {
 }
 
 
-.logo img{
+.logo img {
   width: 68px;
   height: 68px;
 }
+
 h1 {
   font-size: 42px;
   text-transform: uppercase;
@@ -67,11 +70,12 @@ h1 {
   font-family: "Coiny", sans-serif;
   color: white;
   /* background-color: purple; */
-  line-height: 1; /* to put the font below it as margin was not working */
+  line-height: 1;
+  /* to put the font below it as margin was not working */
   margin-top: 5px;
 }
 
-.category{
+.category {
   margin-bottom: 16px;
 }
 
@@ -80,7 +84,8 @@ h1 {
   line-height: 1.4;
   background-color: #44403c;
   margin-bottom: 16px;
-  padding: 16px 24px; /* top,bottom and left and right*/
+  padding: 16px 24px;
+  /* top,bottom and left and right*/
   display: flex;
   align-items: center;
   gap: 24px;
@@ -93,6 +98,7 @@ h1 {
   padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 100px;
 }
 
 .vote-buttons {
@@ -109,13 +115,17 @@ always style it with link
 .source:link,
 .source:visited {
   color: #a7a29e;
-  text-decoration: none; /* to remove the underline */
-  margin-left: 12px; /* to give space for the element to the left*/
-  transition: 0.3s; /* to have a smooth transition when */
+  text-decoration: none;
+  /* to remove the underline */
+  margin-left: 12px;
+  /* to give space for the element to the left*/
+  transition: 0.3s;
+  /* to have a smooth transition when */
 
 }
 
-.source:hover, source:active {
+.source:hover,
+source:active {
   color: #3b82f6;
   transition: 0.3s;
 }
@@ -126,11 +136,16 @@ always style it with link
   line-height: 1;
   text-transform: uppercase;
   font-size: 17px;
-  padding: 16px 0 13px; /* top, right, bottom */
+  padding: 16px 0 13px;
+  /* top, right, bottom */
   /* background-image: linear-gradient(to left, #3b82f6, #93c5fd); */
   background-image: linear-gradient(135deg, #3b82f6, #ef4444, #eab300);
   color: inherit;
   transition: 0.3s;
+  border-radius: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+  /* to change the cursor to a pointer when hovering over the button */
 }
 
 .btn:hover {
@@ -142,12 +157,39 @@ always style it with link
   padding: 20px 32px 17px;
 }
 
-.btn-all-categories{
+.btn-all-categories {
   margin-bottom: 16px;
-  width: 100%; /* in relation with the parent element */
+  width: 100%;
+  /* in relation with the parent element */
 }
 
-.btn-category{ 
+.btn-category {
   width: 100%;
   background-image: none;
+}
+
+
+.vote-buttons button {
+  background-color: #78716c;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vote-buttons button:hover{
+  background-color: #292524;
+}
+
+.vote-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px; /* to give space between the buttons */
+  flex-shrink: 0; /* to prevent the buttons from shrinking */
+  
 }
