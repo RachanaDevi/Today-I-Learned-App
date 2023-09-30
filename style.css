@@ -103,22 +103,20 @@ ul {
 /* only for href classes 
 always style it with link
 */
-.source:link {
-  color: red;
+.source:link,
+.source:visited {
+  color: #a7a29e;
+  text-decoration: none; /* to remove the underline */
+  margin-left: 12px; /* to give space for the element to the left*/
+  transition: 0.3s; /* to have a smooth transition when */
+
 }
 
-.source:hover {
+.source:hover, source:active {
   color: #3b82f6;
+  transition: 0.3s;
 }
 
-.source:visited{
-  color: purple;
-}
-
-.source:active{
-  color:green;
-
-}
 /* .test {
   background-color: black;
   display: grid;
