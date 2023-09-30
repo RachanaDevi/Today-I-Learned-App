@@ -96,7 +96,6 @@ h1 {
 }
 
 .vote-buttons {
-  background-color: red;
   margin-left: auto;
 }
 
@@ -131,6 +130,11 @@ always style it with link
   /* background-image: linear-gradient(to left, #3b82f6, #93c5fd); */
   background-image: linear-gradient(135deg, #3b82f6, #ef4444, #eab300);
   color: inherit;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg)
 }
 
 .btn-large {
