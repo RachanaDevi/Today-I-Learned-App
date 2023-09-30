@@ -71,6 +71,10 @@ h1 {
   margin-top: 5px;
 }
 
+.category{
+  margin-bottom: 16px;
+}
+
 .fact {
   font-size: 20px;
   line-height: 1.4;
