@@ -118,7 +118,7 @@ always style it with link
 }
 
 .btn {
-  border: non;
+  border: none;
   font-family: 'Coiny', sans-serif;
   line-height: 1;
   text-transform: uppercase;
@@ -132,4 +132,14 @@ always style it with link
 .btn-large {
   font-size: 30px;
   padding: 20px 32px 17px;
+}
+
+.btn-all-categories{
+  margin-bottom: 16px;
+  width: 100%; /* in relation with the parent element */
+}
+
+.btn-category{ 
+  width: 100%;
+  background-image: none;
 }
