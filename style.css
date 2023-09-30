@@ -193,3 +193,41 @@ source:active {
   flex-shrink: 0; /* to prevent the buttons from shrinking */
   
 }
+
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+
+.fact-form input, .fact-form select {
+  width: 220px;
+  background-color: #78716c;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* this is a pseudo element */
+.fact-form input::placeholder {
+  color: #a8a29e;
+}
+
+/* only selecting the first input and making it grow */
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
