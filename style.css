@@ -100,6 +100,25 @@ ul {
   list-style: none;
 }
 
+/* only for href classes 
+always style it with link
+*/
+.source:link {
+  color: red;
+}
+
+.source:hover {
+  color: #3b82f6;
+}
+
+.source:visited{
+  color: purple;
+}
+
+.source:active{
+  color:green;
+
+}
 /* .test {
   background-color: black;
   display: grid;
